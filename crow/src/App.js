@@ -6,6 +6,7 @@ import { Home } from "./views/Home";
 import { Footer } from "./components/Footer";
 import { Tutorial } from "./views/Tutorial";
 import { About } from "./views/About";
+import { Escrow } from "./views/Escrow";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/tutorial" element={<Tutorial />} />
           <Route path="/about" element={<About />} />
+          <Route path="/escrow" element={<Escrow />} />
           <Route path="/*" element={<ErrorPage />} />
         </Routes>
         <Footer/>
