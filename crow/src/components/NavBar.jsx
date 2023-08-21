@@ -11,7 +11,7 @@ export const NavBar = () => {
         <img src={logo} alt="Crow Logo" className="logo" /></Link>
       </div>
       <div className="nav-menu">
-        <Link to="/escrow">
+        <Link to="https://crow-app-l3ru.vercel.app/">
           {" "}
           <span>Escrow Service</span>
         </Link>
@@ -25,7 +25,11 @@ export const NavBar = () => {
         </Link>
       </div>
       <div>
-        <button className="mainbutton">Launch app</button>
+      <a href="https://crow-app-l3ru.vercel.app/create">
+              {" "}
+              <button className="mainbutton">Launch App</button>
+            </a>
+       
       </div>
     </nav>
   );

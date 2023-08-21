@@ -6,7 +6,8 @@ import deposit from "../assets/deposit.svg";
 import execute from "../assets/execute.svg";
 import dots from "../assets/dots.svg";
 import banner from "../assets/imagebanner.svg";
-import candado from "../assets/candado.svg"
+import candado from "../assets/candado.svg";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -20,8 +21,14 @@ export const Home = () => {
             of your cryptocurrency and NFT deposits.
           </h3>
           <div className="flex">
-            <button>Launch App</button>
-            <button>Tutorial</button>
+            <a href="https://crow-app-l3ru.vercel.app/create">
+              {" "}
+              <button>Launch App</button>
+            </a>
+
+            <Link to="/tutorial">
+              <button>Tutorial</button>
+            </Link>
           </div>
         </div>
         <div>
@@ -80,31 +87,49 @@ export const Home = () => {
       <div className="detail-section flex justify-between">
         <div className="detail-box">
           <span>Unparalleled Security</span>
-          <p>We eliminate the need for intermediaries and the risk of fraud or mismanagement.</p>
+          <p>
+            We eliminate the need for intermediaries and the risk of fraud or
+            mismanagement.
+          </p>
         </div>
         <div className="detail-box">
           <span>Simplified User Experience</span>
-          <p>Whether you're a seasoned cryptocurrency investor or new to the world of blockchain, our platform is designed to cater to your needs.</p>
+          <p>
+            Whether you're a seasoned cryptocurrency investor or new to the
+            world of blockchain, our platform is designed to cater to your
+            needs.
+          </p>
         </div>
         <div className="detail-box">
           <span>Efficiency and Speed</span>
-          <p>With Crow, transactions are streamlined, reducing the time and effort required for secure asset transfers.</p>
+          <p>
+            With Crow, transactions are streamlined, reducing the time and
+            effort required for secure asset transfers.
+          </p>
         </div>
         <div className="detail-box">
           <span>Trust and Transparency</span>
-          <p>We eliminate the need for intermediaries and the risk of fraud or mismanagement.</p>
+          <p>
+            We eliminate the need for intermediaries and the risk of fraud or
+            mismanagement.
+          </p>
         </div>
       </div>
       <div className="flex join-crow w-full">
         <div className="w-1/3">
-          <img src={candado} alt="candado" className="candado"/>
+          <img src={candado} alt="candado" className="candado" />
         </div>
         <div className="w-2/3">
           <span>Join Crow and Experience the Future of Escrow Services</span>
-          <p>Say goodbye to outdated and insecure escrow systems. With Crow, your transactions are protected by the immutability and transparency of blockchain technology. Experience secure, efficient, and transparent escrow services, revolutionizing the way you handle your digital asset transactions.</p>
+          <p>
+            Say goodbye to outdated and insecure escrow systems. With Crow, your
+            transactions are protected by the immutability and transparency of
+            blockchain technology. Experience secure, efficient, and transparent
+            escrow services, revolutionizing the way you handle your digital
+            asset transactions.
+          </p>
         </div>
       </div>
     </section>
-    
   );
 };
