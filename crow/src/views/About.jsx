@@ -3,6 +3,9 @@ import { Roadmap } from "../components/Roadmap";
 import "../styles/About.scss";
 import coin from "../assets/coin.svg";
 import clock from "../assets/clock.svg";
+import bacs from "../assets/BACS.jpeg";
+import backmen from "../assets/bac-men.png";
+import backwomen from "../assets/bac-women.png";
 
 export const About = () => {
   return (
@@ -33,15 +36,27 @@ export const About = () => {
         </div>
       </div>
       <div className="BAC-title">
-        <h2>The Blockchain Arbitration and Commerce Society</h2>
-        <span>
+        <div className="flex">
+          <h2>The Blockchain Arbitration and Commerce Society</h2>
+          <img
+            src={bacs}
+            alt="Blockchain Arbitration and Commerce Society"
+            className="about-bacs-img"
+          />
+        </div>
+        {/* <span>
           crow is affiliated with The Blockchain Arbitration and Commerce
           Society (BACS)
-        </span>
+        </span> */}
       </div>
       <div className="w-full flex">
-        <div className="w-1/2">
-          <img src={clock} alt="" className="clock"/>
+        <div className="w-1/2 flex bac-men-img">
+          <div className="w-1/2">
+            <img src={backmen} alt="" className="clock" />
+          </div>{" "}
+          <div className="w-1/2">
+            <img src={backwomen} alt="" className="clock" />
+          </div>
         </div>
         <div className="w-1/2 BAC-text">
           <div>
@@ -72,7 +87,7 @@ export const About = () => {
           </div>
         </div>
       </div>
-      <Roadmap/>
+      <Roadmap />
       <div>
         <button></button>
       </div>
